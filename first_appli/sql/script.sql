@@ -23,6 +23,7 @@ CREATE TABLE Client (
 CREATE TABLE Produit (
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     nom VARCHAR(50) NOT NULL,
+    image TEXT NOT NULL,
     description VARCHAR(255) NOT NULL,
     prix FLOAT UNSIGNED NOT NULL,
     couleur VARCHAR(25) NOT NULL,
@@ -42,12 +43,12 @@ CREATE TABLE Commande (
 --  ------------------------
 
 INSERT INTO client VALUES
-(NULL,  "ABDALLAH"  ,   "Mourad"    ,   "abdallah.mourad@example.com"   ,  "Paris",    "0612345678",   1),
-(NULL,  "BENARZID"  ,   "Abdel"     ,   "benarzid.abdel@example.com"    ,  "Paris",    "0612345678",   1),
-(NULL,  "DEMBELE"   ,   "Oussman"   ,   "abdallah.mourad@example.com"   ,  "Paris",    "0612345678",   1),
-(NULL,  "LAOUARI"   ,   "Nassima"   ,   "abdallah.mourad@example.com"   ,  "Paris",    "0612345678",   1),
-(NULL,  "ABDALLAH"  ,   "Mourad"    ,   "abdallah.mourad@example.com"   ,  "Paris",    "0612345678",   1),
-(NULL,  "ABDALLAH"  ,   "Mourad"    ,   "abdallah.mourad@example.com"   ,  "Paris",    "0612345678",   1),
-(NULL,  "ABDALLAH"  ,   "Mourad"    ,   "abdallah.mourad@example.com"   ,  "Paris",    "0612345678",   1),
-(NULL,  "ABDALLAH"  ,   "Mourad"    ,   "abdallah.mourad@example.com"   ,  "Paris",    "0612345678",   1),
-(NULL,  "ABDALLAH"  ,   "Mourad"    ,   "abdallah.mourad@example.com"   ,  "Paris",    "0612345678",   1),
+(NULL,  "ABDALLAH"  ,   "Mourad"    ,   "abdallah.mourad@example.com"   ,  "Paris"      ,    "0612345678",   1),
+(NULL,  "BENARZID"  ,   "Abdel"     ,   "benarzid.abdel@example.com"    ,  "Paris"      ,    "0724681012",   1),
+(NULL,  "DEMBELE"   ,   "Oussman"   ,   "dembele.oussman@example.com"   ,  "Caen"       ,    "0636912156",   2),
+(NULL,  "LAOUARI"   ,   "Nassima"   ,   "laouari.nassima@example.com"   ,  "Rouen"      ,    "0748121620",   2),
+(NULL,  "MARTIN"    ,   "Flora"     ,   "martin.flora@example.com"      ,  "Bordeaux"   ,    "0651015204",   3),
+(NULL,  "MOUGHTADIN",   "Dounia"    ,   "moughtadin.dounia@example.com" ,  "Bordeaux"   ,    "0761218248",   3),
+(NULL,  "DELAVEINE" ,   "Bastien"   ,   "delaveine.bastien@example.com" ,  "Versailles" ,    "0671421282",   4),
+(NULL,  "DELAVEINE" ,   "Claire"    ,   "delaveine.claire@example.com"  ,  "Versailles" ,    "0781624326",   4),
+(NULL,  "ABDALLAH"  ,   "Myriam"    ,   "abdallah.myriam@example.com"   ,  "Paris"      ,    "0691827360",   5);
