@@ -12,7 +12,7 @@ USE SuperBasket;
 --  CREATION DES TABLES
 --  ------------------------
 
-CREATE TABLE Client (
+CREATE TABLE IF NOT EXISTS Client (
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     nom VARCHAR(50) NOT NULL,
     prenom VARCHAR(50) NOT NULL,
@@ -22,7 +22,7 @@ CREATE TABLE Client (
     id_produit INT
 ) ENGINE=InnoDB;
 
-CREATE TABLE Produit (
+CREATE TABLE IF NOT EXISTS Produit (
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     reference VARCHAR(20) NOT NULL,
     categorie VARCHAR(20) NOT NULL,
@@ -37,7 +37,7 @@ CREATE TABLE Produit (
     UNIQUE (reference)
 ) ENGINE=InnoDB;
 
-CREATE TABLE Commande (
+CREATE TABLE IF NOT EXISTS Commande (
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     id_client INT NULL DEFAULT NULL,
     montant FLOAT UNSIGNED NOT NULL,
@@ -45,7 +45,7 @@ CREATE TABLE Commande (
     etat ENUM('en cours de traitement', 'envoyé', 'livré') NOT NULL,    
 ) ENGINE=InnoDB;
 
-CREATE TABLE detail_commande (
+CREATE TABLE IF NOT EXISTS detail_commande (
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     id_commande INT NULL DEFAULT NULL,
     id_produit INT NULL DEFAULT NULL,
