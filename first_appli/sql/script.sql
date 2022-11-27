@@ -67,8 +67,8 @@ INSERT INTO client VALUES
 (NULL,  "ABDALLAH"  ,   "Myriam"    ,   "abdallah.myriam@example.com"   ,  "Paris"      ,    "0691827360",   5);
 
 INSERT INTO produit VALUES
-(NULL,  'DZ5485-303',   'chaussures',   'Air Jordan 1 Retro High OG Celtics',   'Chaussures Air Jordan 1 pour homme aux couleurs des Celtics de Boston' ,   'Green' ,   40  ,   'm' ,   'air-jordan-1-retro-high-og-gorge-green-dz5485-303.jpg' , 180.00,   1),
-(),                 
-(),
-(),
-();
+(NULL,  'DZ5485-303',   'chaussures',   'Air Jordan 1 Retro High OG Celtics',   'Chaussures Air Jordan 1 pour homme aux couleurs des Celtics de Boston'     ,   'Green' ,   40  ,   'm'     ,   'air-jordan-1-retro-high-og-gorge-green-dz5485-303.jpg' ,   180.00  ,   1),
+(NULL,  'GV9586'    ,   'chaussures',   'Adidas Harden Vol.6 Taxi'          ,   'Chaussures Adidas Harden pour adulte mixte'                                ,   'Yellow',   40  ,   'mixte' ,   'adidas-harden-vol-6-taxi-gv9586.jpg'                   ,   150.00  ,   2),                 
+(NULL,  'DD9538-013',   'chaussures',   'Nike KD Trey 5 X Team Durant'      ,   'Basketball Shoes pour femme tout age'                                      ,   'Purple',   38  ,   'f'     ,   'nike-kd-trey-5-x-team-durant.jpg'                      ,   100.00  ,   2),        
+(NULL,  'GX3881'    ,   'chaussures',   'Reebok Shaq Attaq Orlando OG'      ,   'Chaussures Reebok Pump Shaq Attaq pour adulte mixte'                       ,   'White' ,   42  ,   'mixte' ,   'reebok-shaq-attaq-orlando-og-nba-gx3881.jpg'           ,   180.00  ,   2),
+(NULL,  'DN1772-104',   'chaussures',   'Jordan Luka 1 Legend of 7'         ,   'Chaussures signature de Luka Doncic pour femme aux couleurs bleu turquoise',   'Blue'  ,   36  ,   'f'     ,   'jordan-luka-1-neo-turquoise-dn1772-104.jpg'            ,   110.00  ,   1);                                                                                                                                                                    
