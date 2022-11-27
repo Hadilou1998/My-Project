@@ -2,6 +2,8 @@
 --  BDD SuperBasket
 --  ------------------------
 
+DROP DATABASE SuperBasket;
+
 CREATE DATABASE SuperBasket;
 
 USE SuperBasket;
