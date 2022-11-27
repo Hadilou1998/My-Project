@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS Client (
     ville VARCHAR(75) NOT NULL,
     telephone CHAR(10) NOT NULL,
     id_produit INT
-) ENGINE=InnoDB;
+);
 
 CREATE TABLE IF NOT EXISTS Produit (
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
@@ -35,15 +35,15 @@ CREATE TABLE IF NOT EXISTS Produit (
     prix FLOAT UNSIGNED NOT NULL,
     stock FLOAT UNSIGNED NOT NULL,    
     UNIQUE (reference)
-) ENGINE=InnoDB;
+);
 
 CREATE TABLE IF NOT EXISTS Commande (
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
     id_client INT NULL DEFAULT NULL,
     montant FLOAT UNSIGNED NOT NULL,
     date_enregistrement DATETIME NOT NULL,
-    etat ENUM('en cours de traitement', 'envoyé', 'livré') NOT NULL,    
-) ENGINE=InnoDB;
+    etat ENUM('en cours de traitement', 'envoyé', 'livré') NOT NULL    
+);
 
 CREATE TABLE IF NOT EXISTS detail_commande (
     id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
@@ -51,7 +51,7 @@ CREATE TABLE IF NOT EXISTS detail_commande (
     id_produit INT NULL DEFAULT NULL,
     quantite FLOAT UNSIGNED NOT NULL,
     prix FLOAT UNSIGNED NOT NULL
-) ENGINE=InnoDB;
+);
 
 --  ------------------------
 --  INSERTION DES DONNEES
